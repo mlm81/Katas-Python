@@ -641,7 +641,6 @@ else:
     
     
     
-
 # Ejercicio 39: Escribe un programa que determine qué calificación en texto tiene un alumno en base a su calificación numérica. 
     # Las reglas de calificación son:
         # 0 - 69 insuficiente
@@ -694,11 +693,8 @@ print(area_figura ("circulo", (3,)))
     # 5. Muestra el precio final de la compra, teniendo en cuenta el descuento aplicado o sin él. 
     # 6. Recuerda utilizar estructuras de control de flujo como if, elif y else para llevar a cabo estas acciones en tu programa de Python.
 
-
 precio = float(input("Introduce el precio original del artículo: "))
-
 tiene_cupon = input("¿Tienes un cupón de descuento? (sí/no): ").strip().lower()
-
 descuento = 0  
 
 if tiene_cupon == "sí" or tiene_cupon == "si":
