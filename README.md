@@ -16,21 +16,21 @@ En este proyecto he aplicado los conocimientos aprendidos en el módulo de Pytho
 ## Estructura del proyecto
 El repositorio está compuesto por los siguientes archivos:
 
-- `README.md` → documentación general del proyecto
-- `Katas Python.py` → archivo con la resolución de las 41 katas
-- `EnunciadoDataProjectPython.pdf` → documento con los enunciados del proyecto
+- README.md → documentación general del proyecto
+- Katas Python.py → archivo con la resolución de las 41 katas
+- EnunciadoDataProjectPython.pdf → documento con los enunciados del proyecto
 
 ---
 
 ## Contenidos trabajados
 En este proyecto he puesto en práctica los conceptos aprendidos de Python:
 
-- Tipos de datos básicos (`int`, `float`, `str`, `bool`)
+- Tipos de datos básicos (int, float, str, bool)
 - Estructuras de datos: listas, tuplas, diccionarios y conjuntos
 - Funciones y paso de parámetros
-- Condicionales (`if`, `elif`, `else`)
-- Bucles (`for`)
-- Programación funcional (`map`, `filter`, `reduce`)
+- Condicionales (if, elif, else)
+- Bucles (for)
+- Programación funcional (map, filter, reduce)
 - Manejo de excepciones y errores personalizados
 - Programación orientada a objetos (clases y métodos)
 - Manipulación de cadenas de texto
