@@ -6,7 +6,7 @@ def contar_frecuencias(cadena):
         letra = letra.lower() 
         if letra in frecuencias:
             frecuencias[letra] += 1
-    else:
+        else:
         frecuencias[letra] = 1
     return frecuencias
 
@@ -220,7 +220,8 @@ print (palabras_con_letra(palabras,"m"))
 
 # Ejercicio 15: Crea una función lambda que  sume 3 a cada número de una lista dada.
 
-numero_mas_tres = list(map(lambda numero : numero+3, numeros))
+numeros = [1, 2, 3, 4, 5]
+numero_mas_tres = list(map(lambda numero: numero + 3, numeros))
 
 # Ejemplo
 
@@ -258,11 +259,11 @@ print(digitos_a_numero([5, 7, 2]))
 # Ejercicio 18:  Escribe un programa en Python que cree una lista de diccionarios que contenga información de estudiantes (nombre, edad, calificación) y use la función filter para extraer a los estudiantes con una calificación mayor o igual a 90. Usa la función filter()
 
 estudiantes = [
-    {"Nombre":"Maria","Edad":"21","Calificacion":68},
-    {"Nombre":"Juan","Edad":"25","Calificacion":85},
-    {"Nombre":"Pepe","Edad":"24","Calificacion":91},
-    {"Nombre":"Jose","Edad":"23","Calificacion":100},
-    {"Nombre":"Paco","Edad":"22","Calificacion":90}
+    {"Nombre":"Maria","Edad":21,"Calificacion":68},
+    {"Nombre":"Juan","Edad":25,"Calificacion":85},
+    {"Nombre":"Pepe","Edad":24,"Calificacion":91},
+    {"Nombre":"Jose","Edad":23,"Calificacion":100},
+    {"Nombre":"Paco","Edad":22,"Calificacion":90}
 ]
     
 estudiantes_sobresaliente = list(filter(lambda estudiante: estudiante["Calificacion"] >= 90, estudiantes))
@@ -567,7 +568,7 @@ class UsuarioBanco:
 Usuario1 = UsuarioBanco("Alicia", 100, True)
 Usuario2 = UsuarioBanco("Bob", 50, True)
 Usuario2.agregar_dinero(20)
-Usuario1.transferir_dinero("Bob", 80)
+Usuario1.transferir_dinero(Usuario2, 80)
 Usuario1.retirar_dinero(50)
 
 
@@ -616,12 +617,9 @@ def procesar_texto (texto, opcion, *args):
     
     # Ejemplo
     
-    texto = "buenos días, princesa!"
-    print("contar palabras: ")
-    print(procesar_texto(texto,"contar"))
-    print("remplar_palabras: ")
-    print(reemplazar_palabras(texto,"reemplazar", "princesa","principe"))
-    print("eliminar_palabras: ")
+    texto = "buenos días princesa"
+    print(procesar_texto(texto, "contar"))
+    print(procesar_texto(texto, "reemplazar", "princesa", "príncipe"))
     print(procesar_texto(texto, "eliminar", "princesa"))
     
     
@@ -634,7 +632,7 @@ if hora < 0 or hora > 23:
     print ("por favor, introduce una hora valida")
 elif 6 <= hora < 12:
     print("es por la mañana")
-elif 12<= hora > 20:
+elif 12<= hora < 20:
     print("es por la tarde")
 else:
     print("es por la noche")
